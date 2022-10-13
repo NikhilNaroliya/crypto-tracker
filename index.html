@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <title>Crypto Tracker</title>
+  <style>
+    body {
+      background-image: url('https://image.cnbcfm.com/api/v1/image/107005904-1643117857182-gettyimages-1237577245-widak-bitcoind220106_npTUo-1.jpg?v=1653668844&w=740&h=416&ffmt=webp');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    img {
+      opacity: 0.5;
+    }
+
+    .footer {
+      margin-top: 8rem;
+      border-radius: 20px;
+      padding: 4px;
+      /*       margin: auto; */
+      text-align: center;
+      background-color: #f59e0b;
+      padding: 4rem 1rem;
+      color: white;
+      border-top-right-radius: 1rem;
+      background-image: url(social-final.jpg);
+      opacity: 1;
+    }
+
+    .footer.links {
+      color: white;
+    }
+
+    .footer.ul {
+      padding-inline-start: 0px;
+    }
+
+    .footer-header {
+
+      font-weight: bold;
+      font-size: large;
+    }
+
+    .list-item-inline {
+      text-decoration: none;
+      color: rgb(29, 14, 14);
+      display: inline;
+      padding: 0rem 2rem;
+      list-style: none;
+      border: 2px solid white;
+      border-radius: 2rem;
+    }
+
+    #prices {
+      text-align: center;
+    }
+
+    h5 {
+      margin-right: 1rem;
+      text-align: center;
+    }
+
+    .para {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <h1 class="col-md-7 text-center" style="color:#f59e0b;text-align:center;">Crypto Tracker</h1>
+
+      <div class="col-md-6 row justify-content-center">
+        <div class="col-10">
+          <form action="" id="searchForm">
+            <div class="form-row">
+              <div class="col-12 form-group">
+                <label for="xyz" style="color:#d97706;text-align:center;"><b>coin type</b></label>
+                <select name="coinType" class="form-control" id="xyz">
+                  <option value="bitcoin">Bitcoin</option>
+                  <option value="dogecoin">Dogecoin</option>
+                  <option value="ethereum">Ethereum</option>
+                  <option value="polkadot">Polkadot</option>
+                  <option value="tether">Tether</option>
+                </select>
+              </div>
+            </div>
+
+            <button type="submit" class="col-12 btn btn-primary">Get Price</button>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-7 text-center row justify-content-center">
+        <table class="col-md-7 m-2" border="1px" id="tableResult">
+
+        </table>
+      </div>
+
+    </div>
+
+  </div>
+  <div>
+    <h4 class="para">Refresh rate every 30secs</h4>
+  </div>
+  <footer class="footer">
+    <div class="footer-header">Connect ME Throgh Social Accounts</div>
+    <ul class="social links-no-bullets">
+      <li class="list-item-inline"><a class="w"
+          href="https://www.linkedin.com/in/nikhil-naroliya-%F0%9F%87%AE%F0%9F%87%B3-a3b2a8238">linked in</a></li>
+      <li class="list-item-inline"><a class="w" href="https://github.com/NikhilNaroliya">github</a></li>
+      <!-- <img  class="blog-image" id="i1" src="my pic.jpeg"  width="2rem" height="80" style="border-radius:10% ;"/> -->
+    </ul>
+
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="app.js"></script>
+  <script type='text/javascript'
+    data-cfasync='false'>window.purechatApi = {l: [], t: [], on: function () {this.l.push(arguments);}}; (function () {var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) {if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) {var w = new PCWidget({c: '473e1867-1177-490f-b95a-5935a10e49da', f: true}); done = true;} };})();</script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9NWXGGKVC8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-9NWXGGKVC8');
+  </script>
+  <!-- footer -->
+  <!-- footer -->
+
+</body>
+
+</html>
